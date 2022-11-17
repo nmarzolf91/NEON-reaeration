@@ -3,8 +3,26 @@
 .RData
 .Ruserdata
 
-# data
+# directories
 data/
+figures/
 
 # rproj
 NEON-reaeration.Rproj
+
+# messing around code
+examine_files.R
+
+# old code
+Reaeration_mastercalc_nominal_highertol.R
+Reaeration_mastercalc_nominal.R
+manual peak ID.R
+manual reaeration_trim.R
+manual reaeration.R
+Peaktime_calculation_3_3.R
+Peaktime_calculation_higher tolerance.R
+
+# text and image files
+Questions for Amanda.docx
+logo.png
+decision tree.pptx
