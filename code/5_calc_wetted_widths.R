@@ -9,11 +9,12 @@
 ## Email: nicholas.marzolf@duke.edu
 ##
 ## load packages:  
-library(tidyverse)
-library(dplyr)
-library(ggplot2)
-library(feather)
-library(glue)
+{library(tidyverse)
+  library(dplyr)
+  library(ggplot2)
+  library(feather)
+  library(glue)
+}
 
 calc_wetted_widths <- function(raw_dir = 'data/raw/Reaeration field and lab collection/') {
   sites <- list.files(raw_dir)
@@ -46,9 +47,8 @@ calc_wetted_widths <- function(raw_dir = 'data/raw/Reaeration field and lab coll
       dir.create(write_dir)
     
     write_csv(mean_widths,
-              glue(write_dir, '/{site}_mean_width.csv'))
+              glue::glue(write_dir, '/{site}_mean_width.csv'))
     
   } # end for loop
 } # end function
 
-calc_wetted_widths()
