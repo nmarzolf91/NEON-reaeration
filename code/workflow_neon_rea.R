@@ -29,6 +29,9 @@ source('code/neon_helpers.R')
 ## all files are returned as feather files
 get_reaeration_data()
 
+# get the field discharge product
+get_neon_product(product_codes = 'DP1.20048.001')
+
 # Step 2: summarize injection experiments
 ## Isolate each experiment and maintain some of the meta-data from these experiments
 injection_summary <- summarise_neon_rea_fieldData()
