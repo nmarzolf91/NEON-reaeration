@@ -76,8 +76,8 @@ estimate_scaling_coefs <- function(dir = 'data/derived/hydraulics') {
                    names_to = 'meas',
                    values_to = 'val') %>% 
       ggplot(.,
-             aes(x = log10(calcQ_m3s),
-                 y = log10(val)))+
+             aes(x = log(calcQ_m3s),
+                 y = log(val)))+
       geom_point()+
       geom_smooth(method = 'lm')+
       # scale_x_log10()+
