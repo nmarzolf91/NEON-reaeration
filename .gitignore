@@ -4,7 +4,9 @@
 .Ruserdata
 
 # directories
-data/
+data/raw
+data/derived/hydraulics
+data/derived/mean_width
 figures/
 
 # rproj
