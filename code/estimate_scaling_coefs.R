@@ -85,8 +85,8 @@ estimate_scaling_coefs <- function(dir = 'data/derived/hydraulics') {
       ggplot2::facet_grid(meas ~ ., 
                           switch = 'both')+
       ggplot2::theme_bw()+
-      ggplot2::labs(x = 'Discharge (m3/s)',
-                    y = 'Width (m), Velocity (m/s), Depth (m)')+
+      ggplot2::labs(x = 'ln(Discharge (m3/s))',
+                    y = 'ln(Width (m), Velocity (m/s), Depth (m))')+
       ggplot2::ggtitle(site)
     
     fig_dir <- 'figures'
